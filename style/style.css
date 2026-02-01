@@ -180,3 +180,46 @@ section .task-column .task button{
     width: fit-content;
     align-self: center;
 }
+
+@media (max-width: 768px) {
+    nav {
+        padding: var(--padding-m) var(--padding-l);
+        gap: var(--padding-m);
+    }
+
+    nav button {
+        width: 100%;
+        padding: var(--padding-l);
+    }
+
+    section {
+        padding: var(--padding-m) var(--padding-l);
+        flex-direction: column;
+        gap: var(--padding-l);
+    }
+
+    section .task-column {
+        width: 100%;
+        padding: var(--padding-l);
+    }
+
+    section .task-column .task {
+        cursor: default; /* Remove grab cursor on touch devices */
+    }
+
+    .modal .center {
+        padding: var(--padding-l);
+        width: 90%; /* Ensure modal fits on small screens */
+        max-width: 400px; /* Optional max width for better UX */
+    }
+
+    .modal .center input,
+    .modal .center textarea,
+    .modal .center select {
+        padding: var(--padding-l);
+    }
+
+    .modal .center button {
+        padding: var(--padding-l) var(--padding-xl);
+    }
+}
